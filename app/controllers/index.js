@@ -1,20 +1,27 @@
 var len;
+$.tfResult.focusable=true; //needed for keypressed
+
 
 //======------ E V E N T S ------======
 //-------------------------------------------
-$.tfResult.addEventListener("change", function(e) {
+$.tfResult.addEventListener("keypressed", function(e) {
     
-    if (typeof(len)==='undefined') len = e.value.length;
-    //glo.say();
-    //glo.say('e.source.value: ' + e.source.value);
-    if (len !== e.value.length) {
+    if (e.keyCode==4 || e.keyCode==67) {//back key (soft and hard keyboard)
+        e.source.value = e.source.value.slice(0, -1); //chop
+        return;  
+    }
+    //alert(e.keyCode);
+    if (typeof(len)==='undefined') len = e.source.value.length;
+    //Ti.API.info('==================');
+    //Ti.API.info('e.source.value: ' + e.source.value);
+    if (len !== e.source.value.length) {
          maskIdent(this);
          len = e.source.value.length;
          e.source.setSelection(len,len);
     }
-    //glo.say('value: ' + e.source.value);
-    //glo.say('len: ' + len);
-    //glo.say('e.source.value: ' + e.source.value);
+    //Ti.API.info('value: ' + e.source.value);
+    //Ti.API.info('len: ' + len);
+    //Ti.API.info('e.source.value: ' + e.source.value);
 });
 //-------------------------------------------
 $.tfMask.addEventListener("change", function(e){

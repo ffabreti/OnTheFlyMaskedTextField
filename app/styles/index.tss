@@ -29,8 +29,4 @@
     textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
     backgroundImage:'/blank.png'
     
-},
-
-"#tfResult":{
-    keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD  
 }

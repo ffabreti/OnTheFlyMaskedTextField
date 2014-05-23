@@ -5,6 +5,6 @@
         <TextField id="tfMask"/>
         <Label></Label>
         <Label> Test it Here:</Label>
-        <TextField id="tfResult" keyboardType="KEYBOARD_NUMBER_PAD"></TextField>
+        <TextField id="tfResult" keyboardType="Ti.UI.KEYBOARD_NUMBER_PAD"></TextField>
 	</Window>
 </Alloy>
