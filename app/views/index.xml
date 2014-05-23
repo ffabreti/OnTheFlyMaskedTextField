@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container" layout="vertical">
+	    <Label>On The Fly Masked TextField</Label>
+        <Label>Set Mask:</Label>
+        <TextField id="tfMask"/>
+        <Label></Label>
+        <Label> Test it Here:</Label>
+        <TextField id="tfResult" keyboardType="KEYBOARD_NUMBER_PAD"></TextField>
+	</Window>
+</Alloy>

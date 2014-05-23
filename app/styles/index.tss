@@ -1,0 +1,36 @@
+"Window": {
+    navBarHidden:true,
+    backgroundColor: '#111',
+    layout: 'vertical'
+    
+},
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#ccc",
+	top: '20dp'
+}, 
+
+
+"TextField": {
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    autocorrect: false,
+    top:'2dp',
+    //left:'2dp',
+    bottom:'2dp',
+    right:'2dp',
+    borderColor: '#005590',
+    borderWidth: '1dp',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+    borderRadius: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundImage:'/blank.png'
+    
+},
+
+"#tfResult":{
+    keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD  
+}
